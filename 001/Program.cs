@@ -7,16 +7,16 @@
 void Zadacha1()
 {
     Random rand = new Random();
-    int n = rand.Next(10,151);
+    int n = rand.Next(10,1000);
     Console.WriteLine(n);
     if (n<100)
     {
         Console.WriteLine("Третьей цифры нет");
     }
-    else
-    {
-        int Ones = n%10;
-        Console.WriteLine($"Третья цифра: {Ones}");
+   else if (n<1000)
+   {
+        int digit = n%10;
+        Console.WriteLine($"Третья цифра: {digit}");
     }
 }
 Zadacha1();
